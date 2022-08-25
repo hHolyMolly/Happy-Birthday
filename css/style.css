@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -440,6 +441,7 @@ body {
   /* Если меньше контейнера */
   min-height: 80px;
   border: 2px solid rgba(172, 173, 165, 0.8);
+  /* Если меньше контейнера */
   border-radius: 35px;
   overflow: auto;
   resize: none;
@@ -454,22 +456,27 @@ body {
 }
 @media (max-width: 630px) {
   .main-field__input {
-    padding-top: calc(15px + 10 * ((100vw - 320px) / 310));
+    padding-top: calc(10px + 15 * ((100vw - 320px) / 310));
   }
 }
 @media (max-width: 630px) {
   .main-field__input {
-    padding-bottom: calc(15px + 10 * ((100vw - 320px) / 310));
+    padding-bottom: calc(10px + 15 * ((100vw - 320px) / 310));
   }
 }
 @media (max-width: 630px) {
   .main-field__input {
-    min-height: calc(70px + 10 * ((100vw - 320px) / 310));
+    min-height: calc(50px + 30 * ((100vw - 320px) / 310));
   }
 }
 @media (max-width: 630px) {
   .main-field__input {
-    font-size: calc(14px + 4 * ((100vw - 320px) / 310));
+    border-radius: calc(15px + 20 * ((100vw - 320px) / 310));
+  }
+}
+@media (max-width: 630px) {
+  .main-field__input {
+    font-size: calc(10px + 8 * ((100vw - 320px) / 310));
   }
 }
 .main-field__input:not(:last-child) {
@@ -507,13 +514,13 @@ body {
 }
 @media (max-width: 630px) {
   .main-field__input::-moz-placeholder {
-    font-size: calc(14px + 4 * ((100vw - 320px) / 310));
+    font-size: calc(10px + 8 * ((100vw - 320px) / 310));
   }
   .main-field__input:-ms-input-placeholder {
-    font-size: calc(14px + 4 * ((100vw - 320px) / 310));
+    font-size: calc(10px + 8 * ((100vw - 320px) / 310));
   }
   .main-field__input::placeholder {
-    font-size: calc(14px + 4 * ((100vw - 320px) / 310));
+    font-size: calc(10px + 8 * ((100vw - 320px) / 310));
   }
 }
 .main-field__input:focus {
@@ -522,7 +529,7 @@ body {
 
 .thanks {
   border-radius: 33px;
-  overflow: hidden;
+  overflow: auto;
   background-color: #AEC343;
 }
 @media (min-width: 768.2px) {
