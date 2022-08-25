@@ -349,6 +349,21 @@ body {
 .main-grade__btn._active {
   background-color: rgb(236, 253, 231);
 }
+.main-grade__btn:hover .main-grade__btn-label img {
+  -webkit-animation: animationGrade 1s ease forwards;
+          animation: animationGrade 1s ease forwards;
+}
+.main-grade__btn-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.main-grade__btn-label img {
+  max-width: 100%;
+}
 @media (any-hover: hover) {
   @-webkit-keyframes animationGrade {
     0% {
@@ -384,33 +399,33 @@ body {
       transform: rotate(0deg);
     }
   }
-  .main-grade__btn:hover {
-    -webkit-animation: animationGrade 1s ease forwards;
-            animation: animationGrade 1s ease forwards;
+}
+.main-grade__btn-text {
+  position: absolute;
+  bottom: 10px;
+  /* Если меньше контейнера */
+  font-size: 13px;
+}
+@media (max-width: 630px) {
+  .main-grade__btn-text {
+    font-size: calc(11px + 2 * ((100vw - 320px) / 310));
   }
-}
-.main-grade__btn-label {
-  cursor: pointer;
-}
-.main-grade__btn-label img {
-  max-width: 100%;
 }
 .main-grade__btn-radio {
   display: none;
 }
 
 .main-field__input {
-  padding: 0px 15px;
+  padding: 15px 15px;
   width: 100%;
   /* Если меньше контейнера */
   min-height: 80px;
   border: 2px solid rgba(172, 173, 165, 0.8);
   border-radius: 35px;
-  overflow: hidden;
+  overflow: auto;
+  resize: none;
   transition: border-color 0.3s ease 0s;
   background-color: #fff;
-  text-overflow: ellipsis;
-  white-space: nowrap;
   /* Если меньше контейнера */
   font-size: 18px;
   font-weight: 300;
@@ -438,8 +453,6 @@ body {
   }
 }
 .main-field__input::-moz-placeholder {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   /* Если меньше контейнера */
   font-size: 18px;
   font-weight: 300;
@@ -448,8 +461,6 @@ body {
   color: rgba(0, 0, 0, 0.55);
 }
 .main-field__input:-ms-input-placeholder {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   /* Если меньше контейнера */
   font-size: 18px;
   font-weight: 300;
@@ -458,8 +469,6 @@ body {
   color: rgba(0, 0, 0, 0.55);
 }
 .main-field__input::placeholder {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   /* Если меньше контейнера */
   font-size: 18px;
   font-weight: 300;
