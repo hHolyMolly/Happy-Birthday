@@ -1,0 +1,4 @@
+
+function selects(){const selects=document.querySelectorAll('[data-select]');const offSelects=()=>{const selectsActive=document.querySelectorAll('[data-select]');selectsActive.forEach((el)=>{el.classList.remove('_active');});};if(selects.length>0){selects.forEach((select)=>{const current=select.querySelector('[data-select-current]');const items=select.querySelectorAll('[data-select-list] li');items.forEach((item)=>{item.addEventListener('click',()=>{current.innerText=item.innerText;offSelects();});});document.addEventListener('click',(e)=>{const eTarget=e.target;if(!eTarget.closest('[data-select]')){select.classList.remove('_active');}
+if(eTarget.closest('[data-select-button]')){const spoiler=eTarget.closest('[data-select]');if(spoiler.classList.contains('_active')){offSelects();}else{offSelects();spoiler.classList.add('_active');}}});});}}
+export default selects;

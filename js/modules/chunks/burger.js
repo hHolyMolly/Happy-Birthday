@@ -1,0 +1,3 @@
+
+import{bodyLock,bodyUnLock}from'../functions/body_lock.js';function burger(){const menu=document.querySelector('[data-menu]');const toggle=document.querySelector('[data-menu-toggle]');const header=document.querySelector('.header');const body=document.body;toggle.addEventListener('click',()=>{menu.classList.toggle('_active');toggle.classList.toggle('_active');header.classList.toggle('_menu-open');if(menu.classList.contains('_active')){bodyLock();}else{bodyUnLock();}});}
+export default burger;
