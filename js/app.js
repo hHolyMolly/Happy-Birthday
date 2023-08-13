@@ -1,2 +1,0 @@
-
-import'./modules/chunks/swiper.js';import dynamicAdaptive from'./modules/chunks/dynamic_adap.js';dynamicAdaptive();import headerScroll from'./modules/chunks/header_scroll.js';headerScroll();import burger from'./modules/chunks/burger.js';burger();import spollers from'./modules/chunks/spollers.js';const spollersSpeed=500;spollers(spollersSpeed);import tabs from'./modules/chunks/tabs.js';tabs();import selects from'./modules/chunks/selects.js';selects();import anchors from'./modules/chunks/anchors.js';anchors();

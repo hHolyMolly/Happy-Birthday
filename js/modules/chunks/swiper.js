@@ -1,3 +1,0 @@
-
-function sliderDefault(){const slidersArr=document.querySelectorAll('.team-inner__slider.swiper');const arrowPrev=document.querySelectorAll('.team-inner__arrow.swiper-button-prev');const arrowNext=document.querySelectorAll('.team-inner__arrow.swiper-button-next');slidersArr.forEach((slider,index)=>{const swiper=new Swiper(slider,{grabCursor:true,speed:600,watchSlidesProgress:true,spaceBetween:30,slidesPerView:1,navigation:{nextEl:arrowNext[index],prevEl:arrowPrev[index],},breakpoints:{1099.98:{slidesPerView:1.35,},991.98:{slidesPerView:1.15,},},});});}
-sliderDefault();
