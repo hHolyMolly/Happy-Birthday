@@ -4,16 +4,18 @@ function menuBurger() {
 
   const body = document.body;
 
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("_active");
-    burgerMenu.classList.toggle("_active");
+  if (burger && burgerMenu) {
+    burger.addEventListener("click", () => {
+      burger.classList.toggle("_active");
+      burgerMenu.classList.toggle("_active");
 
-    if (burgerMenu.classList.contains("_active")) {
-      body.style.overflow = "hidden";
-    } else {
-      body.style.overflow = "auto";
-    }
-  });
+      if (burgerMenu.classList.contains("_active")) {
+        body.style.overflow = "hidden";
+      } else {
+        body.style.overflow = "auto";
+      }
+    });
+  }
 }
 
 menuBurger();
