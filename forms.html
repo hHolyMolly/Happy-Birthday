@@ -168,59 +168,80 @@
         </div>
       </header>
       <main class="main--page">
-        <div class="form-wrap">
-          <form action="#">
-            <div class="form-wrp d-flex d-j">
-              <div class="form-left">
-                <input type="text" placeholder="ФИО" />
-                <input type="email" placeholder="E-mail" />
-                <input type="tel" placeholder="Телефон" />
-
-                <div class="file-input-wrp">
-                  <button class="btn-file" type="button">Загрузить документы</button>
-                  <span class="name-txt"></span>
-                  <input class="file-input" type="file" />
-                </div>
-              </div>
-              <div class="form-right">
-                <textarea placeholder="Сообщение"></textarea>
-                <input class="btn-submit" type="submit" value="Отправить" />
-                <div class="checkbox">
-                  <input id="check1" type="checkbox" name="check" value="check1" />
-                  <label for="check1">
-                    Предоставляю свое согласие на обработку <br />
-                    моих персональных данных
-                  </label>
-                </div>
+        <form class="form--section" action="#">
+          <div class="form--section-row">
+            <div class="form--section-item form--section-item-el">
+              <input type="text" placeholder="ФИО" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="email" placeholder="E-mail" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="tel" placeholder="Телефон" />
+            </div>
+          </div>
+          <div class="form--section-row">
+            <div class="form--section-item form--section-item-big">
+              <textarea placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form--section-item form--section-item-mobile">
+              <div class="file-input-wrp">
+                <button class="btn-file" type="button">Загрузить документы</button>
+                <span class="name-txt"></span>
+                <input class="file-input" type="file" />
               </div>
             </div>
-          </form>
-        </div>
-        <br /><br /><br />
-        <div class="form-wrap form-wrap2">
-          <form action="#">
-            <div class="form-wrp d-flex d-j">
-              <div class="form-left">
-                <input type="text" placeholder="ФИО" />
-                <input type="email" placeholder="E-mail" />
-                <input type="tel" placeholder="Телефон" />
-                <input type="text" placeholder="ИНН" />
-                <input type="text" placeholder="Наименование компании" />
-              </div>
-              <div class="form-right">
-                <textarea placeholder="Сообщение"></textarea>
-                <input class="btn-submit" type="submit" value="Отправить" />
-                <div class="checkbox">
-                  <input id="check2" type="checkbox" name="check" value="check2" />
-                  <label for="check2">
-                    Предоставляю свое согласие на обработку <br />
-                    моих персональных данных
-                  </label>
-                </div>
+            <div class="form--section-item">
+              <div class="checkbox">
+                <input id="check1" type="checkbox" name="check" value="check1" />
+                <label for="check1"> Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с политикой </label>
               </div>
             </div>
-          </form>
-        </div>
+            <div class="form--section-item">
+              <input class="btn-submit" type="submit" value="Отправить" />
+            </div>
+          </div>
+          <div class="form--section-item form--section-item-pc">
+            <div class="file-input-wrp">
+              <button class="btn-file" type="button">Загрузить документы</button>
+              <span class="name-txt"></span>
+              <input class="file-input" type="file" />
+            </div>
+          </div>
+        </form>
+        <form class="form--section" action="#">
+          <div class="form--section-row">
+            <div class="form--section-item form--section-item-el">
+              <input type="text" placeholder="ФИО" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="email" placeholder="E-mail" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="tel" placeholder="Телефон" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="text" placeholder="ИНН" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="text" placeholder="Наименование компании" />
+            </div>
+          </div>
+          <div class="form--section-row">
+            <div class="form--section-item form--section-item-big">
+              <textarea placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form--section-item">
+              <div class="checkbox">
+                <input id="check2" type="checkbox" name="check" value="check2" />
+                <label for="check2"> Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с политикой </label>
+              </div>
+            </div>
+            <div class="form--section-item">
+              <input class="btn-submit" type="submit" value="Отправить" />
+            </div>
+          </div>
+        </form>
       </main>
       <footer class="footer">
         <div class="foot-wrap base-container">

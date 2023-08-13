@@ -168,68 +168,84 @@
         </div>
       </header>
       <main class="main--page">
-        <div class="mapa">
-          <img style="width: 100%; max-width: none; object-fit: cover; height: 503px" src="img/mapa.jpg" alt="" />
-        </div>
-        <div class="base-container page-contacts">
-          <div class="wrap">
-            <div class="row contact-info">
-              <div class="col">
-                <h1>Контакты</h1>
-                <div>
-                  Полное наименование: <br />
-                  Общество с ограниченной ответственностью <br />
-                  «Страховая Компания «Ойлер Гермес Ру»
+        <div class="contacts--block">
+          <div class="mapa">
+            <img style="width: 100%; max-width: none; object-fit: cover; height: 503px" src="img/mapa.jpg" alt="" />
+          </div>
+          <div class="base-container page-contacts">
+            <div class="wrap">
+              <div class="row contact-info">
+                <div class="col">
+                  <h1>Контакты</h1>
+                  <div>
+                    Полное наименование: <br />
+                    Общество с ограниченной ответственностью <br />
+                    «Страховая Компания «Ойлер Гермес Ру»
+                  </div>
+                  <div>
+                    Сокращенное наименование: <br />
+                    ООО «СК «Ойлер Гермес Ру» <br />
+                    ОГРН 5117746060735
+                  </div>
                 </div>
-                <div>
-                  Сокращенное наименование: <br />
-                  ООО «СК «Ойлер Гермес Ру» <br />
-                  ОГРН 5117746060735
+                <div class="col col-r">
+                  <a class="tel-k" href="tel:+74959812833">+7 495 981-28-33</a>
+                  <div>
+                    115184, Москва, Озерковская набережная, 30, <br />
+                    3 этаж, помещение VII, комната 5
+                  </div>
+                  <div>
+                    Режим работы: <br />
+                    Пн - Пт: 09:00 – 18:00 <br />
+                    Сб, Вс: выходной
+                  </div>
+                  <a class="mail-k" href="mailto:hello@gersa.ru">hello@gersa.ru</a>
                 </div>
-              </div>
-              <div class="col col-r">
-                <a class="tel-k" href="tel:+74959812833">+7 495 981-28-33</a>
-                <div>
-                  115184, Москва, Озерковская набережная, 30, <br />
-                  3 этаж, помещение VII, комната 5
-                </div>
-                <div>
-                  Режим работы: <br />
-                  Пн - Пт: 09:00 – 18:00 <br />
-                  Сб, Вс: выходной
-                </div>
-                <a class="mail-k" href="mailto:hello@gersa.ru">hello@gersa.ru</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="form-wrap">
-          <form action="#">
-            <div class="form-wrp d-flex d-j">
-              <div class="form-left">
-                <input type="text" placeholder="ФИО" />
-                <input type="email" placeholder="E-mail" />
-                <input type="tel" placeholder="Телефон" />
-
-                <div class="file-input-wrp">
-                  <button class="btn-file" type="button">Загрузить документы</button>
-                  <span class="name-txt"></span>
-                  <input class="file-input" type="file" />
-                </div>
-              </div>
-              <div class="form-right">
-                <textarea placeholder="Сообщение"></textarea>
-                <input class="btn-submit" type="submit" value="Отправить" />
-                <div class="checkbox">
-                  <input id="check1" type="checkbox" name="check" value="check1" />
-                  <label for="check1">
-                    Предоставляю свое согласие на обработку <br />
-                    моих персональных данных
-                  </label>
-                </div>
+        <div class="form--section">
+          <h2 class="contacts--title-mobile">Связаться с нами</h2>
+          <div class="form--section-row">
+            <div class="form--section-item form--section-item-el">
+              <input type="text" placeholder="ФИО" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="email" placeholder="E-mail" />
+            </div>
+            <div class="form--section-item form--section-item-el">
+              <input type="tel" placeholder="Телефон" />
+            </div>
+          </div>
+          <div class="form--section-row">
+            <div class="form--section-item form--section-item-big">
+              <textarea placeholder="Сообщение"></textarea>
+            </div>
+            <div class="form--section-item form--section-item-mobile">
+              <div class="file-input-wrp">
+                <button class="btn-file" type="button">Загрузить документы</button>
+                <span class="name-txt"></span>
+                <input class="file-input" type="file" />
               </div>
             </div>
-          </form>
+            <div class="form--section-item">
+              <div class="checkbox">
+                <input id="check2" type="checkbox" name="check" value="check2" />
+                <label for="check2"> Нажимая кнопку «Отправить», вы даете согласие на обработку персональных данных в соответствии с политикой </label>
+              </div>
+            </div>
+            <div class="form--section-item">
+              <input class="btn-submit" type="submit" value="Отправить" />
+            </div>
+          </div>
+          <div class="form--section-item form--section-item-pc">
+            <div class="file-input-wrp">
+              <button class="btn-file" type="button">Загрузить документы</button>
+              <span class="name-txt"></span>
+              <input class="file-input" type="file" />
+            </div>
+          </div>
         </div>
       </main>
       <footer class="footer">
