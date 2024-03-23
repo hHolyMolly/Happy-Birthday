@@ -212,7 +212,7 @@ h6 {
   --orange-darker_hover: #3b3732;
   --orange-darker_active: #201e1c;
   --blur-wrapper: 4px;
-  --background-wrapper: rgba(3, 3, 3, 0.3);
+  --background-wrapper: rgba(3, 3, 3, 0.4);
   --background-image: url("../img/bg.png");
   --background-color: #1a1a1a;
 }
@@ -233,7 +233,7 @@ body._lock-scroll {
 }
 @media (max-width: 767.2px) {
   body {
-    background-size: contain;
+    background-size: auto;
   }
 }
 
