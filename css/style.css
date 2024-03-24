@@ -231,11 +231,6 @@ body {
 body._lock-scroll {
   overflow: hidden;
 }
-@media (max-width: 767.2px) {
-  body {
-    background-size: auto;
-  }
-}
 
 .wrapper {
   min-height: 100%;
@@ -324,9 +319,6 @@ body._lock-scroll {
   border-radius: 48px;
   border: 1px solid var(--black-500);
   background-color: var(--black-500);
-}
-.feedback-link svg path {
-  fill: var(--green-yellow-normal);
 }
 .feedback-link span {
   padding-top: 40px;
