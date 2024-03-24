@@ -491,7 +491,7 @@ body._lock-scroll {
 }
 @media (max-width: 1279.2px) {
   .header-menu {
-    padding: 0 12px 28px;
+    padding: 0 12px 80px;
     width: 100%;
     height: 100%;
     display: none;
