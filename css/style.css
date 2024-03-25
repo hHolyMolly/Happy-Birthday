@@ -923,3 +923,14 @@ body._lock-scroll {
     color: var(--black-200);
   }
 }
+
+.background-image-news {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/screens/news/bg/pc.png");
+}
+@media (max-width: 767.2px) {
+  .background-image-news {
+    background-image: url("../img/screens/news/bg/mobile.png");
+  }
+}
